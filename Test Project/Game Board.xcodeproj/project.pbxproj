@@ -19,6 +19,8 @@
 		B734C35619AD7A02009350EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B734C33E19AD7A02009350EE /* UIKit.framework */; };
 		B734C35E19AD7A02009350EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B734C35C19AD7A02009350EE /* InfoPlist.strings */; };
 		B734C36019AD7A02009350EE /* Game_BoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B734C35F19AD7A02009350EE /* Game_BoardTests.m */; };
+		B734C36C19AD7A60009350EE /* TJMGameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = B734C36B19AD7A60009350EE /* TJMGameBoard.m */; };
+		B734C36F19AD7AC4009350EE /* TJMGameBoardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B734C36E19AD7AC4009350EE /* TJMGameBoardCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		B734C35B19AD7A02009350EE /* Game BoardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Game BoardTests-Info.plist"; sourceTree = "<group>"; };
 		B734C35D19AD7A02009350EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B734C35F19AD7A02009350EE /* Game_BoardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Game_BoardTests.m; sourceTree = "<group>"; };
+		B734C36A19AD7A60009350EE /* TJMGameBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJMGameBoard.h; sourceTree = "<group>"; };
+		B734C36B19AD7A60009350EE /* TJMGameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJMGameBoard.m; sourceTree = "<group>"; };
+		B734C36D19AD7AC4009350EE /* TJMGameBoardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJMGameBoardCell.h; sourceTree = "<group>"; };
+		B734C36E19AD7AC4009350EE /* TJMGameBoardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJMGameBoardCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		B734C34019AD7A02009350EE /* Game Board */ = {
 			isa = PBXGroup;
 			children = (
+				B734C36919AD7A60009350EE /* Source */,
 				B734C34919AD7A02009350EE /* TJMAppDelegate.h */,
 				B734C34A19AD7A02009350EE /* TJMAppDelegate.m */,
 				B734C34C19AD7A02009350EE /* Images.xcassets */,
@@ -142,6 +149,18 @@
 				B734C35C19AD7A02009350EE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B734C36919AD7A60009350EE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B734C36A19AD7A60009350EE /* TJMGameBoard.h */,
+				B734C36B19AD7A60009350EE /* TJMGameBoard.m */,
+				B734C36D19AD7AC4009350EE /* TJMGameBoardCell.h */,
+				B734C36E19AD7AC4009350EE /* TJMGameBoardCell.m */,
+			);
+			name = Source;
+			path = ../../Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B734C34B19AD7A02009350EE /* TJMAppDelegate.m in Sources */,
+				B734C36C19AD7A60009350EE /* TJMGameBoard.m in Sources */,
+				B734C36F19AD7AC4009350EE /* TJMGameBoardCell.m in Sources */,
 				B734C34719AD7A02009350EE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +461,7 @@
 				B734C36519AD7A02009350EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B734C36619AD7A02009350EE /* Build configuration list for PBXNativeTarget "Game BoardTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +470,7 @@
 				B734C36819AD7A02009350EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
