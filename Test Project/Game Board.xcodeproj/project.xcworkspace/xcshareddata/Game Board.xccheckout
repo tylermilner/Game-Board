@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8ED19DEB-03B2-4DEC-A430-FE81E70EA9AB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Game Board</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CA4E5322-BF89-4600-B1A9-692069E6223E</key>
+		<string>ssh://github.com/Cubd/Game-Board.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Test Project/Game Board/Game Board.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CA4E5322-BF89-4600-B1A9-692069E6223E</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/Cubd/Game-Board.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CA4E5322-BF89-4600-B1A9-692069E6223E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA4E5322-BF89-4600-B1A9-692069E6223E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Game Board</string>
+		</dict>
+	</array>
+</dict>
+</plist>
