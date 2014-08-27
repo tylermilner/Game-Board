@@ -1,0 +1,10 @@
+PODS:
+  - TJMTwoDimensionalArray (1.0.0)
+
+DEPENDENCIES:
+  - TJMTwoDimensionalArray (~> 1.0)
+
+SPEC CHECKSUMS:
+  TJMTwoDimensionalArray: f3d114018cacbb542f9624d6e5264f880111ae02
+
+COCOAPODS: 0.33.1
