@@ -7,6 +7,7 @@
 //
 
 #import "TJMAppDelegate.h"
+#import "TJMGameBoard.h"
 
 @implementation TJMAppDelegate
 
@@ -16,6 +17,20 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    
+    TJMGameBoard *gameBoard = [[TJMGameBoard alloc] initWithNumberOfRows:4 numberOfColumns:4];
+    NSLog(@"Game board created: %@", gameBoard);
+    
+    NSLog(@"Black plays (0,0)");
+    [gameBoard setGameBoardCellState:TJMGameBoardCellStateBlack AtRow:0 column:0];
+    NSLog(@"%@", gameBoard);
+    
+    NSLog(@"White place (2,3)");
+    [gameBoard setGameBoardCellState:TJMGameBoardCellStateWhite AtRow:2 column:3];
+    NSLog(@"%@", gameBoard);
+    
+    
     return YES;
 }
 
