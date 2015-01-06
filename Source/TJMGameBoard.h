@@ -10,7 +10,7 @@
 #import "TJMGameBoardCell.h"
 
 
-@interface TJMGameBoard : NSObject
+@interface TJMGameBoard : NSObject <NSCoding>
 
 @property (assign, nonatomic) NSUInteger numberOfRows;
 @property (assign, nonatomic) NSUInteger numberOfColumns;
