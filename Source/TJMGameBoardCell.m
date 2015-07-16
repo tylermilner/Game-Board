@@ -8,6 +8,8 @@
 
 #import "TJMGameBoardCell.h"
 
+#define kNSCodingStateKey @"state"
+
 @implementation TJMGameBoardCell
 
 + (instancetype)gameBoardCell
@@ -23,6 +25,25 @@
     {
         _state = state;
     }
+    
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeInteger:self.state forKey:kNSCodingStateKey];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super init];
+    
+    if (!self)
+    {
+        return nil;
+    }
+    
+    self.state = [aDecoder decodeIntegerForKey:kNSCodingStateKey];
     
     return self;
 }

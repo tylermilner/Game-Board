@@ -20,7 +20,7 @@ typedef NS_ENUM(NSUInteger, TJMGameBoardCellState) {
 
 #define NSStringFromTJMGameBoardCellState(state) [@[@"-", @"B", @"W"] objectAtIndex:state]
 
-@interface TJMGameBoardCell : NSObject
+@interface TJMGameBoardCell : NSObject <NSCoding>
 
 @property (assign, nonatomic) TJMGameBoardCellState state;
 

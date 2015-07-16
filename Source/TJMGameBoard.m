@@ -15,6 +15,9 @@
 
 #define DEFAULT_NUM_ROWS 4
 #define DEFAULT_NUM_COLS 4
+#define kNSCodingGameBoardKey @"gameBoard"
+#define kNSCodingNumberOfRowsKey @"numberOfRows"
+#define kNSCodingNumberOfColumnsKey @"numberOfColumns"
 
 @interface TJMGameBoard()
 
@@ -55,9 +58,41 @@
     return self;
 }
 
+- (instancetype)initWithNumberOfRows:(NSUInteger)numberOfRows numberOfColumns:(NSUInteger)numberOfColumns gameBoard:(TJMTwoDimensionalArray *)gameBoard
+{
+    self = [super init];
+    
+    if (self)
+    {
+        _numberOfRows = numberOfRows;
+        _numberOfColumns = numberOfColumns;
+        _gameBoard = gameBoard;
+    }
+    
+    return self;
+}
+
 - (void)gameBoardCommonInit
 {
     _gameBoard = [[TJMTwoDimensionalArray alloc] initWithNumberOfRows:_numberOfRows numberOfColumns:_numberOfColumns];
+}
+
+#pragma mark - NSCoding
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.gameBoard forKey:kNSCodingGameBoardKey];
+    [aCoder encodeInteger:self.numberOfRows forKey:kNSCodingNumberOfRowsKey];
+    [aCoder encodeInteger:self.numberOfColumns forKey:kNSCodingNumberOfColumnsKey];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    TJMTwoDimensionalArray *gameBoard = [aDecoder decodeObjectForKey:kNSCodingGameBoardKey];
+    NSUInteger numberOfRows = [aDecoder decodeIntegerForKey:kNSCodingNumberOfRowsKey];
+    NSUInteger numberOfColumns = [aDecoder decodeIntegerForKey:kNSCodingNumberOfColumnsKey];
+    
+    return [self initWithNumberOfRows:numberOfRows numberOfColumns:numberOfColumns gameBoard:gameBoard];
 }
 
 #pragma mark - Properties
